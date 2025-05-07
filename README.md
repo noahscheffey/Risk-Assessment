@@ -1,44 +1,96 @@
-<h1> Security Risk Asseessment Report</h1>
+<h1>Security Risk Assessment: Social Media Organization Data Breach</h1>
 
-<h2>Description</h2>
-Project consists of a social media organization, which experienced a major data breach. This compromised the safety of their customers’ personal information including names and addresses. The organization wanted to implement strong network hardening practices that can be performed consistently to prevent attacks and breaches in the future.
+<h2>Executive Summary</h2>
+As a security analyst for a social media organization that recently experienced a major data breach, I conducted a security risk assessment to identify key vulnerabilities and recommend mitigation strategies. The breach compromised customer personal information (names and addresses), highlighting critical weaknesses in the organization's network security posture. This assessment focuses on four critical vulnerabilities within the organization's network infrastructure: shared employee passwords, default database admin password, inadequate firewall rules, and the absence of multi-factor authentication (MFA). Addressing these vulnerabilities is crucial to preventing future breaches, protecting sensitive data, and maintaining customer trust.
 
-After inspecting the organization’s network, I discovered four major vulnerabilities, which are as follows:
+<h2>Vulnerability Assessment</h2>
 
-1. The organization’s employees' share passwords.
-2. The admin password for the database is set to the default.
-3. The firewalls do not have rules in place to filter traffic coming in and out of the network.
-4. Multifactor authentication (MFA) is not used.
+1. Shared Employee Passwords: Employees are sharing passwords, which increases the risk of unauthorized access.
 
-<h2>Recommended Hardening Tools and Methods to Implement</h2>
+2. Default Database Admin Password: The database administrator account uses the default password.
 
-1. Requiring password policies.
-   <br /> - MFA requires users to use more than one way to identify and verify their credentials before accessing an application. Some MFA methods include fingerprint scans, ID cards, pin numbers, and passwords.
+3. Inadequate Firewall Rules: The firewalls lack rules to filter inbound and outbound network traffic.
 
-2. Implementing multifactor authentication (MFA).
-   <br /> - Password policies can be refined to include rules regarding password length, a list of acceptable characters, and a disclaimer to discourage password sharing. They can also include rules surrounding unsuccessful login attempts, such as the user losing access to the network after five unsuccessful attempts.
-
-3. Utilizing firewall maintenance regularly.
-   <br /> - Firewall maintenance entails checking and updating security configurations regularly to stay ahead of potential threats.
+4. Absence of Multi-Factor Authentication (MFA): MFA is not implemented for user authentication.
  
-<h2>Further Explaination of Recommendations</h2>
+<h2>Risk Analysis</h2>
 
-1. Enforcing multi-factor authentication (MFA) will reduce the likelihood that
-a malicious actor can access a network through a brute force or related attack.
-MFA will also make it more difficult for people within the organization to share
-passwords. Identifying and verifying credentials is especially critical among
-employees with administrator level privileges on the network. MFA should be
-enforced regularly.
+The identified vulnerabilities pose the following risks:
 
-2. Creating and enforcing a password policy within the company will make it
-increasingly challenging for malicious actors to access the network. The rules
-that are included in the password policy will need to be enforced regularly within
-the organization to help increase user security.
+1. Unauthorized Access: Shared passwords and default passwords make it easier for attackers to gain unauthorized access to sensitive systems and data.
 
-3. Firewall maintenance should happen regularly. Firewall rules should be updated
-whenever a security event occurs, especially an event that allows suspicious
-network traffic into the network. This measure can be used to protect against
-various DoS and DDoS attacks.
+2. Data Exfiltration: Successful exploitation of these vulnerabilities could lead to the exfiltration of customer data, resulting in financial loss, reputational damage, legal liabilities (e.g., GDPR violations), and loss of customer trust.
+
+3. System Compromise: Lack of proper firewall rules exposes the organization's systems to various network-based attacks, such as malware infections, denial-of-service attacks, and unauthorized access.
+
+4. Account Takeover: The absence of MFA makes user accounts more susceptible to takeover attacks, where attackers can gain control of accounts and perform malicious actions.
+
+<h2>Recommended Hardening Tools and Methods</h2>
+
+To mitigate the identified risks, I recommend implementing the following network hardening tools and methods:
+
+1. Password Policy Enforcement: Implement a strong password policy with requirements such as:
+
+   - Minimum 12-character length
+
+   - Use of mixed-case letters, numbers, and symbols
+
+   - 90-day password changes
+
+   - Prohibition of reuse and enforcement of password history
+
+   - Account lockout after 5 failed login attempts
+
+   - Employee education on password security
+
+   - Use of a centralized password management system
+
+2. Multi-Factor Authentication (MFA) Implementation:
+
+   - Deploy MFA, especially for administrative accounts
+
+   - Use combined authentication factors:
+
+   - Knowledge (password)
+
+   - Possession (e.g., TOTP app, hardware token)
+
+   - Inherence (biometrics)
+
+   - Enforce MFA for remote network access
+
+3. Firewall Hardening and Maintenance:
+
+   - Implement a stateful firewall with the principle of least privilege.
+
+   - Establish strict firewall rules, including:
+
+   - Blocking non-essential inbound port traffic
+
+   - Limiting outbound traffic to required protocols and ports
+
+   - Regular (quarterly) review and updates of firewall rules
+
+   - Implementation of IDS/IPS for malicious traffic monitoring
+
+   - Enabling and analyzing firewall logs
+
+   - Maintaining up-to-date firewall software and firmware
+
+<h2>Effectiveness of Recommended Methods</h2>
+
+The recommended hardening measures will effectively manage the identified vulnerabilities and prevent future breaches in the following ways:
+
+Password Policy Enforcement: A strong password policy will significantly increase the difficulty for attackers to guess or crack passwords, reducing the risk of unauthorized access. Regular password changes will limit the window of opportunity for an attacker to exploit a compromised password.
+
+Multi-Factor Authentication (MFA): MFA adds an extra layer of security by requiring attackers to provide multiple forms of verification, even if they know the correct password. This makes account takeover attacks substantially more difficult.
+
+Firewall Hardening and Maintenance: Properly configured firewalls act as a barrier between the organization's network and external threats, blocking unauthorized access and preventing network-based attacks. Regular maintenance ensures that the firewall remains effective against evolving threats.
+
+<h2>Conclusion</h2>
+
+This security risk assessment identified critical vulnerabilities that contributed to a recent data breach and could lead to future incidents. The recommended hardening measures, including strong password policies, multi-factor authentication, and robust firewall configuration and maintenance, provide a layered security approach that significantly reduces the attack surface and enhances the organization's overall security posture. By implementing these measures proactively and maintaining them consistently, the organization can minimize the risk of future attacks, protect sensitive customer data, and demonstrate a commitment to security best practices.
+
 </p>
 
 <!--
