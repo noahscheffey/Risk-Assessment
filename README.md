@@ -1,4 +1,4 @@
-<h1> Risk Asseessment Report</h1>
+<h1> Security Risk Asseessment Report</h1>
 
 <h2>Description</h2>
 Project consists of a social media organization, which experienced a major data breach. This compromised the safety of their customers’ personal information including names and addresses. The organization wanted to implement strong network hardening practices that can be performed consistently to prevent attacks and breaches in the future.
