@@ -1,7 +1,7 @@
 <h1>Security Risk Assessment: Social Media Organization Data Breach</h1>
 
 <h2>Executive Summary</h2>
-As a security analyst for a social media organization that recently experienced a major data breach, I conducted a security risk assessment to identify key vulnerabilities and recommend mitigation strategies. The breach compromised customer personal information (names and addresses), highlighting critical weaknesses in the organization's network security posture. This assessment focuses on four critical vulnerabilities within the organization's network infrastructure: shared employee passwords, default database admin password, inadequate firewall rules, and the absence of multi-factor authentication (MFA). Addressing these vulnerabilities is crucial to preventing future breaches, protecting sensitive data, and maintaining customer trust.
+I conducted a security risk assessment for a company to identify key vulnerabilities and recommend mitigation strategies after a breach occurred. The breach compromised customer personal information (names and addresses), highlighting critical weaknesses in the organization's network security posture. This assessment focuses on four critical vulnerabilities within the organization's network infrastructure: shared employee passwords, default database admin password, inadequate firewall rules, and the absence of multi-factor authentication (MFA). Addressing these vulnerabilities is crucial to preventing future breaches, protecting sensitive data, and maintaining customer trust.
 
 <h2>Vulnerability Assessment</h2>
 
